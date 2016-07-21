@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <!--Adding angular js from google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <!--Defining one model and attaching it to input text box -->
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <!--Changes will be updated dynamically because of two way binding -->
+      <h1>Hello {{yourName | uppercase}}!</h1>
+    </div>
+  </body>
+</html>
